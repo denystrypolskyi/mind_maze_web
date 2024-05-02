@@ -76,12 +76,14 @@ const App = () => {
       <Routes>
         {!isLoggedIn && (
           <>
+            <Route path="/" element={<Login onLogin={handleLogin} />} />
             <Route path="/login" element={<Login onLogin={handleLogin} />} />
             <Route path="/register" element={<Register />} />
           </>
         )}
         {isLoggedIn && (
           <>
+            <Route path="/" element={<Profile onLogout={handleLogout} />} />
             <Route
               path="/leaderboard"
               element={<Leaderboard onLogout={handleLogout} />}

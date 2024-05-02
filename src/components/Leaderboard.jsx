@@ -16,7 +16,7 @@ const styles = {
   },
   alert: {
     width: "600px",
-    minHeight: "100px",
+    height: "110px",
   },
   leaderboardContainer: {
     width: "600px",
