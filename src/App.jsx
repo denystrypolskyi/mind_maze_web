@@ -39,17 +39,19 @@ const App = () => {
   };
 
   if (isLoading) {
-    <div
-      style={{
-        width: "100%",
-        minHeight: "calc(100vh - 56px)",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Spinner animation="border" variant="primary" />
-    </div>;
+    return (
+      <div
+        style={{
+          width: "100%",
+          minHeight: "calc(100vh - 56px)",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Spinner animation="border" variant="primary" />
+      </div>
+    );
   }
 
   if (errorMessage) {

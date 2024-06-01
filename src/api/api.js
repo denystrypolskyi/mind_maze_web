@@ -145,10 +145,6 @@ export const fetchLeaderboardData = async () => {
 
     const leaderboardData = response.data;
 
-    if (!leaderboardData || leaderboardData.length === 0) {
-      throw new Error("No leaderboard data available.");
-    }
-
     leaderboardData.sort((a, b) => b.levelReached - a.levelReached);
 
     return leaderboardData;

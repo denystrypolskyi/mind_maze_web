@@ -4,6 +4,9 @@ import { CheckLg } from "react-bootstrap-icons";
 import { colors } from "../constants/constants";
 
 const styles = {
+  instruction: {
+    color: "gray",
+  },
   inputGroup: {
     width: "350px",
   },
@@ -24,7 +27,9 @@ const EnterNumber = ({ onNumberSubmit }) => {
 
   return (
     <>
-      {/* <h1 className="mb-3">What was the number?</h1> */}
+      <p style={styles.instruction}>
+        Please enter the number you remembered below:
+      </p>
       <InputGroup className="mb-3" style={styles.inputGroup}>
         <Form.Control
           type="number"
