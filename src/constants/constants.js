@@ -22,13 +22,13 @@ export const API_BASE_URL = "http://localhost:3000";
 export const AVATAR_BASE_URL = "http://localhost:3000/avatars";
 
 export const API_ENDPOINTS = {
-  USER_INFO: `${API_BASE_URL}/user-info`,
-  VERIFY_TOKEN: `${API_BASE_URL}/verify-token`,
-  LOGIN: `${API_BASE_URL}/login`,
-  REGISTER: `${API_BASE_URL}/register`,
-  LEADERBOARD: `${API_BASE_URL}/leaderboard`,
-  SAVE_RESULT: `${API_BASE_URL}/save-result`,
-  USER_AVATAR: `${API_BASE_URL}/user-avatar`,
+  USER_INFO: `${API_BASE_URL}/user/user-info`,
+  VERIFY_TOKEN: `${API_BASE_URL}/auth/verify-token`,
+  LOGIN: `${API_BASE_URL}/auth/login`,
+  REGISTER: `${API_BASE_URL}/auth/register`,
+  LEADERBOARD: `${API_BASE_URL}/leaderboard/leaderboard`,
+  SAVE_RESULT: `${API_BASE_URL}/leaderboard/save-result`,
+  USER_AVATAR: `${API_BASE_URL}/user/user-avatar`,
 };
 
 export const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB in bytes

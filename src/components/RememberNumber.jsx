@@ -1,9 +1,9 @@
 import { ProgressBar } from "react-bootstrap";
 
 const styles = {
-  number: {
-    fontSize: "18px",
-  },
+  // number: {
+  //   fontSize: "20px",
+  // },
   instruction: {
     color: "gray",
   },
@@ -18,9 +18,10 @@ const RememberNumber = ({ targetNumber, remainingTimerSeconds }) => (
       You have limited time to memorize the number.
     </p>
     <p style={styles.instruction}>Pay close attention!</p>
-    <p className="mb-3" style={styles.number}>
+    <h4 className="mb-3" style={styles.number}>
+    {/* <p className="mb-3" style={styles.number}> */}
       {targetNumber}
-    </p>
+    </h4>
     <ProgressBar now={remainingTimerSeconds * 10} style={styles.progressBar} />
   </>
 );
